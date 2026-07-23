@@ -2,7 +2,7 @@
 name: Website Deployment
 on:
   push:
-    branches:
+    branches :
       - main
 jobs:
   lint:
