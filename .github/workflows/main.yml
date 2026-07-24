@@ -84,7 +84,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+
+      - name: Install action dependencies
+        run: npm install
+        working-directory: ./.github/actions/deploy
 
       - name: Run custom action
         uses: ./.github/actions/deploy
