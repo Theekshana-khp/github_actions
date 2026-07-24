@@ -79,3 +79,9 @@ jobs:
         run: |
           echo "Something went wrong"
           echo "${{ github }}" 
+
+  information:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run custom action
+        uses: ./.github/actions/deploy
