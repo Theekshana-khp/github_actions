@@ -1,0 +1,6 @@
+name: "Deploy Action"
+description: "My custom JavaScript action"
+
+runs:
+  using: "node20"
+  main: "main.js"
